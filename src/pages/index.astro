@@ -6,23 +6,21 @@ const templates = [
   {
     id: 'template1',
     title: 'Template 1',
-    image: '/template1.jpg',
+    image: '/portada-template1.PNG',
     description: 'Diseño 1',
   },
   {
     id: 'template2',
     title: 'Template 2',
-    image: '/template2.jpg',
+    image: '/portada-template2.PNG',
     description: 'Diseño 2',
   },
 ];
 ---
 
 <Layout title="Ecards Sender">
-  <main class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold text-center mb-8">
-      Selecciona una Plantilla
-    </h1>
+  <main class="container mx-auto px-4 py-12s">
+    <h1 class="text-3xl font-bold text-center mb-8">Choose a Template</h1>
     <div class="grid md:grid-cols-2 gap-8">
       {
         templates.map(template => (
